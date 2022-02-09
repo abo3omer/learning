@@ -2,56 +2,41 @@ def f_age_program():
     name = input("please enter your name : ")
     porne = input("pleade enter your porne year : ")
     curent = input("please enter curent year : ")
-    result = float(curent)-float(porne)
-    print("Hellow Mr,Ms "+name.upper()+" your age is "+str(result)+" years old")
+    result = float(curent) - float(porne)
+    print("Hellow Mr,Ms " + name.upper() + " your age is " + str(result) +
+          " years old")
 
 
-
-
-
-def elmax( num1 , num2 , num3 ):
-    if num1>=num2 and num1>=num3:
+def elmax(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
         return num1
-    elif num2>=num1 and num2>=num3:
+    elif num2 >= num1 and num2 >= num3:
         return num2
     else:
         return num3
 
 
-
-
-
-
-def maching(str1 , str2):
+def maching(str1, str2):
     if str1 == str2:
         print("that is OK")
     else:
         print("that is not OK")
 
 
-
-
-
-
-
 def cal():
-    num1= float(input("please enter firest number : "))
-    operator= input("please enter the operator : ")
-    num2= float(input("please enter second number : "))
+    num1 = float(input("please enter firest number : "))
+    operator = input("please enter the operator : ")
+    num2 = float(input("please enter second number : "))
     if operator == "+":
-        return (num1+num2)
+        return (num1 + num2)
     elif operator == "-":
-        return (num1-num2)
+        return (num1 - num2)
     elif operator == "/":
-        return (num1/num2)
+        return (num1 / num2)
     elif operator == "*":
-        return (num1*num2)
+        return (num1 * num2)
     else:
         print("please enter correct operator")
-
-
-
-
 
 
 # fac = ["ahmed", "mohamed", "mahmoud", "ashrafa"]
@@ -64,27 +49,19 @@ def cal():
 #     print("not good")
 
 
-
-
-
-
 def gessing():
     coorect_word = "ahmed"
     gess_word = ""
     traying_count = 0
     max_traying = 3
 
-    while gess_word != coorect_word and traying_count<max_traying:
+    while gess_word != coorect_word and traying_count < max_traying:
         gess_word = input("enter correct word : ")
         traying_count += 1
-        if traying_count<=max_traying and gess_word == coorect_word:
+        if traying_count <= max_traying and gess_word == coorect_word:
             print("you win")
-        elif traying_count>= max_traying:
+        elif traying_count >= max_traying:
             print("gime over")
-
-
-
-
 
 
 def guessing():
@@ -102,7 +79,7 @@ def guessing():
 
     while guess_word != correct_word and end_life == False:
         guess_word = input("enter gussing name : ")
-        traying_count +=1
+        traying_count += 1
         if traying_count >= traying_limet:
             end_life = True
 
@@ -116,14 +93,12 @@ def guessing():
         print("gime over")
 
 
-
-
-
 def power(base_num, power_num):
     result = 1
     for index in range(power_num):
         result = result * base_num
     return result
+
 
 # num = [
 #     [1, 2, 3],
@@ -134,5 +109,3 @@ def power(base_num, power_num):
 # for row in num:
 #     for cul in row:
 #         print(cul*cul)
-
-guessing()
